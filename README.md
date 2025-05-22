@@ -1,10 +1,12 @@
 # Game Of Life
 
-<div style="display: flex; align-items: center;">
-  <img src="images/image1.png" style="width: 300px; height: auto;">
-  <div style="width: 1px; background-color: #000; height: auto; margin: 0 10px;"></div>
-  <img src="images/image2.png" style="width: 300px; height: auto;">
-</div>
+<table>
+  <tr>
+    <td><img src="images/image1.png" width="300"></td>
+    <td style="width:1px; background-color:#000;"></td>
+    <td><img src="images/image2.png" width="300"></td>
+  </tr>
+</table>
 
 Game of Life is a cellular automaton [Wikipedia : Game Of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). It can create beautiful life-like forms, emerging out of nowhere.
 
