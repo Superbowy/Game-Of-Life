@@ -33,7 +33,6 @@ class Window:
     def change_game_mode(self, running, white_cells):
         for event in pygame.event.get(eventtype=pygame.KEYDOWN):
             if event.key == pygame.K_ESCAPE:
-                print(white_cells)
                 return not running
         return running
 
