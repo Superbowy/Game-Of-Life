@@ -35,7 +35,7 @@ class Window:
             if event.key == pygame.K_ESCAPE:
                 return not running
         return running
-
+        
     def get_clicks(self):
         list_of_clicks = []
         for event in pygame.event.get(eventtype=pygame.MOUSEBUTTONDOWN):
