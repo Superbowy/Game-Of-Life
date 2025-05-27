@@ -21,18 +21,6 @@ def update_new(list_of_cells):
     
     return new_list_of_cells
 
-def number_of_alive_neighbours_new(coordinates, list_of_cells):
-    grid = np.zeros((102, 102), dtype=int)
-    for x, y in list_of_cells:
-        grid[x, y] = 1
-
-    kernel = np.array([[1, 1, 1],
-                       [1, 0, 1],
-                       [1, 1, 1]])
-    
-    neighbors = convolve2d(grid, kernel, mode='same')
-    return neighbors[coordinates[0], coordinates[1]]
-
 # Old code - naive approach using for loops
 
 def update_old(list_of_cells):
